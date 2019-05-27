@@ -16,10 +16,10 @@
             <li>强大：数据校检、数据转化一步完成</li>
           </ul>
         </blockquote>
-        <!-- <img
+        <img
           :src="`${publicPath}example.gif`"
           alt="vue-ele-import"
-        >-->
+        >
       </section>
       <section id="install">
         <h2>安装</h2>

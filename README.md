@@ -1,8 +1,8 @@
 # vue-ele-import | 超简单、好用的 element-ui Excel 导入组件
 
-<!-- [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg)](https://opensource.org/licenses/mit-license.php)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg)](https://opensource.org/licenses/mit-license.php)
 [![npm](https://img.shields.io/npm/v/vue-ele-import.svg)](https://www.npmjs.com/package/vue-ele-import)
-[![download](https://img.shields.io/npm/dw/vue-ele-import.svg)](https://npmcharts.com/compare/vue-ele-import?minimal=true) -->
+[![download](https://img.shields.io/npm/dw/vue-ele-import.svg)](https://npmcharts.com/compare/vue-ele-import?minimal=true)
 
 ## 介绍
 
@@ -14,7 +14,7 @@ vue-ele-import 利用 element ui 组件库完成的 Excel 导入数据组件, �
 
 <!-- ## 效果图 -->
 
-<!-- ![演示图](./public/example.gif) -->
+![演示图](./public/example.gif)
 
 ## 文档和示例
 
