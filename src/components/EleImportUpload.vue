@@ -136,6 +136,7 @@ export default {
           this.goNext()
         }
       } catch (e) {
+        // eslint-disable-next-line
         console.error(e)
         this.uploadError('文件读取出错，请重新上传')
       } finally {

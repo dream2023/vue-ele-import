@@ -6,7 +6,7 @@ module.exports = {
   publicPath: isDevelopment ? '/' : '/vue-ele-import/',
   outputDir: isDoc
     ? path.resolve(__dirname, './docs/')
-    : path.resolve(__dirname, './example-dist/'),
+    : path.resolve(__dirname, './dist/'),
   css: { extract: isDevelopment },
   configureWebpack: {
     entry: isDoc ? './documentation/main.js' : './example/main.js',

@@ -64,7 +64,7 @@ export default {
       type: String,
       required: true
     },
-    // 请求地址
+    // 请求方法
     requestFn: {
       type: Function,
       required: true
@@ -77,8 +77,7 @@ export default {
     // 是否显示弹窗
     visible: {
       type: Boolean,
-      required: true,
-      default: false
+      required: true
     },
     // 标题
     title: {
@@ -95,6 +94,7 @@ export default {
       validator (formatter) {
         for (const key in formatter) {
           if (!(formatter[key] instanceof Object)) {
+            // eslint-disable-next-line
             console.error(`${key}的值必须为 对象 或 函数`)
             return false
           }
@@ -102,6 +102,7 @@ export default {
         return true
       }
     },
+    // 弹窗宽度
     dialogWidth: {
       type: String,
       default: '80%'
@@ -124,7 +125,7 @@ export default {
     return {
       tableData: [],
       columns: [],
-      currentStep: 4
+      currentStep: 1
     }
   },
   methods: {

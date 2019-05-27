@@ -9,6 +9,8 @@
       :tips="tips"
       :title="title"
       :visible.sync="visible"
+      @close="handleCloseImport"
+      @finish="handleFinishImport"
     />
     <el-button
       @click="handleOpen"
@@ -45,15 +47,21 @@ export default {
           { required: true, message: '年龄必须填写' }
         ]
       },
-      filepath: 'https://admin.league.qiudin.com/excel/player.xlsx',
+      filepath: 'https://dream2023.github.io/vue-ele-import/user.xlsx',
       visible: false
     }
   },
   methods: {
-    requestFn (data) {
+    async requestFn (data) {
       // eslint-disable-next-line
       // return Promise.reject({ 1: { age: '名字错了' } })
       return Promise.resolve()
+    },
+    handleCloseImport () {
+      console.log('弹窗关闭了~')
+    },
+    handleFinishImport () {
+      console.log('导入完毕了~')
     },
     handleOpen () {
       this.visible = true

@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "build:lib": "vue build -t lib --name vue-ele-gallery -d ./dist/ ./src/index.js",
+    "build:lib": "vue build -t lib --name vue-ele-import -d ./dist/ ./src/index.js",
     "build:docs": "vue-cli-service build",
     "build": "npm run lint && npm run build:docs && npm run build:lib",
     "serve": "npm run example",
@@ -34,17 +34,18 @@
     "xlsx": "^0.14.3"
   },
   "devDependencies": {
-    "element-ui": "^2.8.2",
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
     "@vue/cli-plugin-babel": "^3.7.0",
     "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "core-js": "^2.6.5",
+    "easy-github-pages": "^1.2.0",
+    "element-ui": "^2.8.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^8.1.5",
+    "vue": "^2.6.10",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
