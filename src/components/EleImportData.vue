@@ -171,19 +171,16 @@ export default {
       const formatter = this.formatter
       if (formatter) {
         tableData = tableData.map((item) => {
-          const res = {}
           for (const key in item) {
             if (formatter[key]) {
               if (typeof formatter[key] === 'function') {
-                res[key] = formatter[key](item[key], item)
+                item[key] = formatter[key](item[key], item)
               } else {
-                res[key] = this.findKey(formatter[key], item[key])
+                item[key] = this.findKey(formatter[key], item[key])
               }
-            } else {
-              res[key] = item[key]
             }
           }
-          return res
+          return item
         })
       }
 
@@ -203,7 +200,7 @@ export default {
       }
 
       this.isLoading = true
-      let tableData = [...this.tableData]
+      let tableData = JSON.parse(JSON.stringify(this.tableData))
       // 改变值
       tableData = this.changeData(tableData)
       try {
