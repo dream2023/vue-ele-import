@@ -1,6 +1,7 @@
 <template>
   <div>
     <ele-import
+      :append="append"
       :fields="fields"
       :filepath="filepath"
       :formatter="formatter"
@@ -30,6 +31,10 @@ export default {
         name: '名字',
         age: '年龄',
         city: '所在城市'
+      },
+      append: {
+        company: '腾讯',
+        leader: '小马哥'
       },
       formatter: {
         city: {

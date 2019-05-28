@@ -98,7 +98,8 @@ export default {
         return []
       }
     },
-    formatter: Object
+    formatter: Object,
+    append: Object
   },
   inject: ['goNext', 'goPre'],
   data () {
@@ -203,6 +204,13 @@ export default {
       let tableData = JSON.parse(JSON.stringify(this.tableData))
       // 改变值
       tableData = this.changeData(tableData)
+      // 增加附加数据
+      const appendData = this.append
+      if (appendData) {
+        tableData = tableData.map((item) => {
+          return Object.assign({}, item, appendData)
+        })
+      }
       try {
         await this.requestFn(tableData)
         this.$message.success('导入成功')

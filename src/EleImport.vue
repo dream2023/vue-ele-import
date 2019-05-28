@@ -31,6 +31,7 @@
 
       <!-- 数据展示 -->
       <ele-import-data
+        :append="append"
         :fields="fields"
         :formatter="formatter"
         :request-fn="requestFn"
@@ -84,6 +85,8 @@ export default {
       type: String,
       default: '批量导入'
     },
+    // 增加附加数据
+    append: Object,
     // 提示信息，数组
     tips: Array,
     // 验证规则

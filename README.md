@@ -50,6 +50,7 @@ export default {
     <ele-import
       :fields="fields"
       :filepath="filepath"
+      :append="append"
       :formatter="formatter"
       :requestFn="requestFn"
       :rules="rules"
@@ -90,6 +91,11 @@ export default {
           age: function(value, row) {
             return value + 1
           }
+        },
+        // 附加数据, 在每条记录上都会加这两个字段和值
+        append: {
+          company: '腾讯',
+          leader: '小马哥'
         },
         // 参数校检, 和 element-ui 中 form表单中传递的rules一样, 都是使用的 async-validator 库
         // https://element.eleme.cn/#/zh-CN/component/form#biao-dan-yan-zheng
@@ -174,6 +180,8 @@ props: {
   },
   // 提示信息，数组
   tips: Array,
+  // 增加附加数据
+  append: Object,
   // 验证规则
   rules: Object,
   // 格式化数据
