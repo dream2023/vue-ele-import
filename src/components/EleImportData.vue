@@ -179,6 +179,8 @@ export default {
               } else {
                 res[key] = this.findKey(formatter[key], item[key])
               }
+            } else {
+              res[key] = item[key]
             }
           }
           return res

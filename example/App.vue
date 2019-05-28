@@ -53,6 +53,7 @@ export default {
   },
   methods: {
     async requestFn (data) {
+      console.log(data)
       // eslint-disable-next-line
       // return Promise.reject({ 1: { age: '名字错了' } })
       return Promise.resolve()
