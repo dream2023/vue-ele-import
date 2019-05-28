@@ -6,7 +6,7 @@
   "scripts": {
     "build:lib": "vue build -t lib --name vue-ele-import -d ./dist/ ./src/index.js",
     "build": "npm run lint && npm run build:lib",
-    "serve": "npm run example",
+    "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint"
   },
   "repository": {
