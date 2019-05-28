@@ -16,10 +16,6 @@ vue-ele-import 利用 element ui 组件库完成的 Excel 导入数据组件, �
 
 ![演示图](./public/example.gif)
 
-## 文档和示例
-
-[https://dream2023.github.io/vue-ele-import/](https://dream2023.github.io/vue-ele-import/)
-
 ## 安装
 
 ```bash
@@ -45,6 +41,8 @@ export default {
 ```
 
 ## 示例
+
+[点我看在线示例](https://codepen.io/dream2023/pen/NVBKRy)
 
 ```html
 <template>
@@ -104,7 +102,8 @@ export default {
         },
         // Excel模板下载地址
         // 注意, 只能是.xlsx的文件, .xls或者.cvs都会报错
-        filepath: 'https://dream2023.github.io/vue-ele-import/user.xlsx',
+        filepath:
+          'https://raw.githubusercontent.com/dream2023/vue-ele-import/master/public/user.xlsx',
         // 控制弹窗, 和dialog的visible一样
         // https://element.eleme.cn/#/zh-CN/component/dialog
         visible: false

@@ -1,15 +1,12 @@
 {
   "name": "vue-ele-import",
   "description": "超简单、好用的 element-ui Excel导入组件",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "build:lib": "vue build -t lib --name vue-ele-import -d ./dist/ ./src/index.js",
-    "build:docs": "vue-cli-service build",
-    "build": "npm run lint && npm run build:docs && npm run build:lib",
+    "build": "npm run lint && npm run build:lib",
     "serve": "npm run example",
-    "example": "vue-cli-service serve",
-    "doc": "vue-cli-service serve --mode docs",
     "lint": "vue-cli-service lint"
   },
   "repository": {
@@ -17,7 +14,6 @@
     "url": "https://github.com/dream2023/vue-ele-import"
   },
   "main": "dist/vue-ele-import.umd.min.js",
-  "homepage": "https://dream2023.github.io/vue-ele-import/",
   "keywords": [
     "vue-ele-import",
     "vue",
@@ -40,7 +36,6 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "core-js": "^2.6.5",
-    "easy-github-pages": "^1.2.0",
     "element-ui": "^2.8.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",

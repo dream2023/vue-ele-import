@@ -47,7 +47,7 @@ export default {
           { required: true, message: '年龄必须填写' }
         ]
       },
-      filepath: 'https://dream2023.github.io/vue-ele-import/user.xlsx',
+      filepath: 'https://raw.githubusercontent.com/dream2023/vue-ele-import/master/public/user.xlsx',
       visible: false
     }
   },
