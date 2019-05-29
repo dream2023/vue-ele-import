@@ -14,6 +14,8 @@ postcss.config.js
 babel.config.js
 .editorconfig
 .cypress.json
+.vscode
+.env.docs
 dist/demo.html
 .env.dev-doc
 .env.dev-example

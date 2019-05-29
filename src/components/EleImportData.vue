@@ -74,6 +74,7 @@
 
 <script>
 import Schema from 'async-validator'
+import cloneDeep from 'lodash.clonedeep'
 
 export default {
   name: 'EleImportData',
@@ -201,7 +202,7 @@ export default {
       }
 
       this.isLoading = true
-      let tableData = JSON.parse(JSON.stringify(this.tableData))
+      let tableData = cloneDeep(this.tableData)
       // 改变值
       tableData = this.changeData(tableData)
       // 增加附加数据

@@ -17,6 +17,7 @@
       @click="handleOpen"
       type="primary"
     >点我打开</el-button>
+    <div>{{tableData}}</div>
   </div>
 </template>
 
@@ -53,11 +54,13 @@ export default {
         ]
       },
       filepath: 'https://raw.githubusercontent.com/dream2023/vue-ele-import/master/public/user.xlsx',
-      visible: false
+      visible: false,
+      tableData: ''
     }
   },
   methods: {
     async requestFn (data) {
+      this.tableData = JSON.stringify(data)
       console.log(data)
       // eslint-disable-next-line
       // return Promise.reject({ 1: { age: '名字错了' } })

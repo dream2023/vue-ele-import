@@ -1,7 +1,7 @@
 {
   "name": "vue-ele-import",
   "description": "超简单、好用的 element-ui Excel导入组件",
-  "version": "1.0.5",
+  "version": "1.1.1",
   "private": false,
   "scripts": {
     "build:lib": "vue build -t lib --name vue-ele-import -d ./dist/ ./src/index.js",
@@ -26,6 +26,7 @@
   "dependencies": {
     "all-trim": "^1.1.1",
     "js-cookie": "^2.2.0",
+    "lodash.clonedeep": "^4.5.0",
     "vue-ele-steps": "^1.0.0",
     "xlsx": "^0.14.3"
   },
