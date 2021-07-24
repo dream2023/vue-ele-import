@@ -28,7 +28,7 @@
     "js-cookie": "^2.2.0",
     "lodash.clonedeep": "^4.5.0",
     "vue-ele-steps": "^1.0.0",
-    "xlsx": "^0.14.3"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
